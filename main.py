@@ -142,7 +142,7 @@ def barkPush(body):
     if barkKey == 1:
         # bark push
         barkUrl = 'https://api.day.app/' + BARKKEY
-        title = 'HaxExtend'
+        title = 'WoidenExtend'
         requests.get(url=f'{barkUrl}/{title}/{body}?isArchive=1')
         print('bark push Done! Body:', body)
     elif barkKey == 0:
@@ -206,7 +206,7 @@ def init():
         # options.add_argument('--disable-dev-shm-usage')
 
         # driver = webdriver.Chrome(executable_path=diffPlatformDriverPath(), options=Options)
-        driver_chrome = uc.Chrome(options=options)
+        driver_chrome = uc.Chrome(version_main=105,options=options)
         # driver = uc.Chrome()
         delay()
         # go to website which have recaptcha protection
